@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".View.PhotoDetailFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/PhotoListNestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            tools:context=".View.PhotoDetailFragment">
+
+            <!-- Imagen del detalle -->
+            <TextView
+                android:id="@+id/PhotoDetailTxtLocationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/PhotoDetailRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/PhotoDetailTxtLatitudeLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/PhotoDetailTweet"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignRight="@id/PhotoDetailTxtLatitudeLongitude"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/primaryColor"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_twitter" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/PhotoDetailImg"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/secondaryColor"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:context=".View.PhotoDetailFragment">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/PhotoDetailTagsRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/PhotoDetailTxtAddTag"
+                            tools:context=".View.PhotoDetailFragment"
+                            tools:itemCount="4">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <TextView
+                            android:id="@+id/PhotoDetailTxtAddTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/secondaryColor"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:onClick="onAddTagClick"
+                            android:text="    +    "
+                            android:textAllCaps="true"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.google.android.gms.maps.MapView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/map"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

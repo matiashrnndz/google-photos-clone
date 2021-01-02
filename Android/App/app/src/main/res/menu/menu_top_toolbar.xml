@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_menu"
+    tools:context="com.app.View.HomeActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/action_edit_account"
+        android:orderInCategory="0"
+        android:title="@string/menu_edit_account" />
+    <item
+        android:id="@+id/action_albums"
+        android:icon="@mipmap/ic_person_add"
+        android:orderInCategory="1"
+        android:title="@string/menu_albums" />
+    <item
+        android:id="@+id/action_new_album"
+        android:icon="@mipmap/ic_favorite"
+        android:orderInCategory="2"
+        android:title="@string/menu_new_album" />
+
+    <item
+        android:id="@+id/action_sign_out"
+        android:icon="@mipmap/ic_favorite"
+        android:orderInCategory="3"
+        android:title="@string/menu_sign_out" />
+</menu>

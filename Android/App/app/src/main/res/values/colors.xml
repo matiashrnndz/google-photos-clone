@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#fff9c4</color>
+    <color name="primaryLightColor">#fffff7</color>
+    <color name="primaryDarkColor">#cbc693</color>
+    <color name="secondaryColor">#ff9e80</color>
+    <color name="secondaryLightColor">#ffd0b0</color>
+    <color name="secondaryDarkColor">#c96f53</color>
+    <color name="primaryTextColor">#d6836b</color>
+    <color name="secondaryTextColor">#c96f53</color>
+    <color name="background">#bdbdbd</color>
+</resources>
+
+    <!--https://material.io/tools/color/#!/?view.left=0&view.right=1&primary.color=FFF9C4&secondary.color=FF9E80&primary.text.color=d6836b&secondary.text.color=914f38-->

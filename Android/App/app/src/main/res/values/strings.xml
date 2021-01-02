@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="enter_password">Password</string>
+    <string name="login">Log In</string>
+    <string name="enter_mobile_number">Mobile Number</string>
+    <string name="enter_valid_mobile">Enter Valid Mobile</string>
+    <string name="enter_valid_password">Enter Valid Password</string>
+    <string name="network_error">Network Error</string>
+    <string name="errorString">Default Error String</string>
+    <string name="successfullySignup">Sign up successful</string>
+    <string name="menu_albums">Albums</string>
+    <string name="menu_new_album">New Album</string>
+    <string name="menu_sign_out">Sign out</string>
+    <string name="menu_edit_account">Edit account</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_tag">Add Tag</string>
+</resources>
